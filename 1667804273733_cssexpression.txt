@@ -1,0 +1,164 @@
+
+CSS TOPIC===>
+expression for images of flipcart
+Syntax= tagname[Attributename='AttributeValue']
+1)Grossery=img[alt='Grocery]
+2)Mobile=img[alt='Mobiles']
+3)Fashion=img[alt='Fashion']
+4)Electronic=img[alt='Electronics']
+5)Home=img[alt='Home']
+6)Appliances=img[alt='Appliances']
+7)Travel=img[alt='Travel']
+8)Beauty, Toys & More=img[alt='Beauty, Toys & More']
+9)2-Wheelers=img[alt='2-Wheelers']
+ css is faster than any other locator
+
+Assignment =url,ckick on x,click on grocerry,use mathod navigate back used,
+ click on mobile,navigate mtd,fashion,usednavigate mtd
+
+
+XPATH TOPIC
+*ABSOLUTE PATH:-
+.  >>current document
+/  >>immediate child
+// >> Any child
+[1] >>index value Start from 1
+
+>>>Absolute Path For Flipcart  image<<<
+Absolute path for Grocery==>html/body/div/div/div[2]/div/div/div[2]/a/div[1]/div/img
+Absolute path for Mobiles==>html/body/div/div/div[2]/div/div/div[3]/a/div[1]/div/img
+Absolute path for Fashion==>html/body/div/div/div[2]/div/div/div[4]/a/div[1]/div/img
+Absolute path for Electronics==>html/body/div/div/div[2]/div/div/div[5]/a/div[1]/div/img
+Absolute path for Home==>html/body/div/div/div[2]/div/div/div[2]/a/div[6]/div/img
+Absolute path for Appliance==>html/body/div/div/div[2]/div/div/div[7]/a/div[1]/div/img
+Absolute path for Travel ==>html/body/div/div/div[2]/div/div/div[8]/a/div[1]/div/img
+Absolute path for Beauty.Toys and More ==>html/body/div/div/div[2]/div/div/div[9]/a/div[1]/div/img
+Absolute path for 2-Wheeler==>html/body/div/div/div[2]/div/div/div[10]/a/div[1]/div/img
+
+>>>Absolute Path For Flipcart  image name<<<
+Grocery imagename=html/body/div/div/div[2]/div/div/div[2]/a/div[2]
+Mobiles imagename=html/body/div/div/div[2]/div/div/div[3]/a/div[2]
+Fashion imagename=html/body/div/div/div[2]/div/div/div[4]/a/div[2]
+Electronic imagename=html/body/div/div/div[2]/div/div/div[5]/a/div[2]
+Home imagename=html/body/div/div/div[2]/div/div/div[6]/a/div[2]
+Appilances imagename=html/body/div/div/div[2]/div/div/div[7]/a/div[2]
+Travel imagename=html/body/div/div/div[2]/div/div/div[8]/a/div[2]
+Beuty,Toys & More imagename=html/body/div/div/div[2]/div/div/div[9]/a/div[2]
+2-Wheelers imagename=html/body/div/div/div[2]/div/div/div[10]/a/div[2]
+
+05/11/2022
+#**Relative Xpath  
+i)Corelated path
+  disadvantages=>if any element added if any element is removed then index value is changed
+   trace reverse
+CORELATED PATH OF IMAGE :-
+path for Grocerry image==>//div[2]/a/div[1]/div/img
+path for Mobiles==>//div[3]/a/div[1]/div/img
+path for Fashion==>//div[4]/a/div[1]/div/img
+path for Electronics==>//div[5]/a/div[1]/div/img
+path for Home==>//div[6]/a/div[1]/div/img
+path for Appliance==>//div[7]/a/div[1]/div/img
+path for Travel ==>//div[8]/a/div[1]/div/img
+path for Beauty.Toys and More ==>//div[9]/a/div[1]/div/img
+path for 2-Wheeler==>//div[10]/a/div[1]/div/img
+
+>>CORELATED PATH FOR IMAGENAME:-//div[2]/a/div[2]
+Grocery imagename==>//div[2]/a/div[2]
+Mobiles imagename===>//div[3]/a/div[2]
+Fashion imagename==>//div[4]/a/div[2]
+Electronic imagename==>//div[5]/a/div[2]
+Home imagename==>//div[6]/a/div[2]
+Appilances imagename==>//div[7]/a/div[2]
+Travel imagename==>//div[8]/a/div[2]
+Beuty,Toys & More imagename==>//div[9]/a/div[2]
+2-Wheelers imagename==>//div[10]/a/div[2]
+
+ii)Xpath by attribute
+   if source code only the text that time we cant use this Xpath
+    syntax=> //tagname[@Attribute name='Attribute value']
+e.g Grocery image=//img[@alt='Grocery']
+
+
+Assignment 1:samsung identify dependent and independent path
+           1.Mobile is fixed and price is dyanamic
+           2.x path of fixed element==//span[text()='SAMSUNG Galaxy F23 5G (Copper Blush, 128GB)']
+           3.//span[text()='SAMSUNG Galaxy  F23 5G (Copper Blush, 128GB)']/../../..//div[@class='_30jeq3 _16Jk6d']
+
+Assignment 2:irctc tourism and helplinenumber
+           1://td[text()='Tourism']
+           2://td[text()='tourism']/..//td[@data-title='helpline']
+
+Assignment 3:Air Ticketing
+           1://td[text()='Air Ticketing']
+           2://td[text()='Air Ticketing']/..//td[@data-title='helpline']/..//td[@data-title='mail']
+
+
+
+x path by index:
+
+(//div[text()='SAMSUNG Galaxy F23 5G(Copper Blush,128 GB)'[2]/../..//div[@class'_30jeq3_1WHN1']
+
+x path by index realme 9(Stargaze White,128GB)
+
+(//div[text()=
+
+ 
+Xpath by  Group Index 
+(//div[text()='realme 9 (Stargaze White, 128 GB)'])[1]/../..//div[@class='_30jeq3 _1_WHN1']
+(//li[text()='6 GB RAM | 128 GB ROM | Expandable Upto 256 GB'])[1]/../../..//div[text()='realme 9 (Stargaze White, 128 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+(//span[text()='Add to Compare'])[2]/../../../../..//div[text()='realme 9 (Stargaze White, 128 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+
+(//span[text()='Add to Compare'])[2]/../../../../..//div[text()='realme 9 (Stargaze White, 128 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+
+
+(//span[text()='Add to Compare'])[1]/../../../../..//div[text()='SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB)']/../..//div[@class='_30jeq3 _1_WHN1']
+
+1---html>
+   <head>
+      <title>single</title>
+   </head>
+   <body>
+      <Select id="Month" >
+      <option value="JAN">JAN</option>
+      <option value="FEB">FEB</option>
+      <option value="MARCH">MARCH</option>
+      <option value="APR">APR</option>
+      <option value="MAY">MAY</option>
+      <option value="JUN">JUN</option>
+      <option value="JUL">JUL</option>
+      <option value="AUG">AUG</option>
+      <option value="SEP">SEP</option>
+      <option value="OCT">OCT</option>
+      <option value="NOV">NOV</option>
+      <option value="DEC">DEC</option>
+      </Select>
+   </body>
+</html>
+
+
+
+<html>
+   <head>
+      <title>Multiple</title>
+   </head>
+   <body>
+      <Select id="Month" multiple>
+      <option value="JAN">JAN</option>
+      <option value="FEB">FEB</option>
+      <option value="MARCH">MARCH</option>
+      <option value="APR">APR</option>
+      <option value="MAY">MAY</option>
+      <option value="JUN">JUN</option>
+      <option value="JUL">JUL</option>
+      <option value="AUG">AUG</option>
+      <option value="SEP">SEP</option>
+      <option value="OCT">OCT</option>
+      <option value="NOV">NOV</option>
+      <option value="DEC">DEC</option>
+      </Select>
+   </body>
+</html>
+
+Github:
+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
+
